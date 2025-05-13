@@ -17,14 +17,29 @@
          <div class="imagen"></div>
          <div class="app">
 
-                <h1 class="nombre-pagina">Iniciar sesión</h1>
-                <p class="descripcion-pagina">Ingresa tus datos</p>
+                <h1 class="nombre-pagina">Crear cuenta</h1>
+                <p class="descripcion-pagina">Llena el siguiente formulario para crear una cuenta</p>
 
              <form class="formulario" action="" >
 
                  <div class="campo">
-                     <label for="email">Correo</label>
-                     <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+                     <label for="nombre">Nombre</label>
+                     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                 </div>
+
+                 <div class="campo">
+                     <label for="apellido">Apellido</label>
+                     <input type="text" name="apellido" id="apellido" placeholder="apellido">
+                 </div>
+                 
+                 <div class="campo">
+                     <label for="telefono">Teléfono</label>
+                     <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                 </div>
+
+                 <div class="campo">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email" placeholder="Email">
                  </div>
 
                  <div class="campo">
@@ -33,14 +48,14 @@
                  </div>
 
                  <div class="campo-boton">
-                    <input type="submit" class="boton" value="Iniciar Sesión">
+                     <input type="submit" class="boton" value="Crear cuenta">
                  </div>
+
 
              </form>
              
              <div class="acciones">
-                 <a href="crearCuenta.html">Crear una cuenta</a>
-                 <a href="#">¿Olvidaste la contraseña?</a>
+                 <a href="index.html">¿Ya tienes una cuenta? Inicia sesión</a>
              </div>
              
          </div>
