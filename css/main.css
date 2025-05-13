@@ -1,7 +1,105 @@
-.contenedor-app{
+:root{
+    --blanco: #ffffff;
+    --azul: #0da6f3;
+    --oscuro: #212121;
+    --grisClaro: #DFE9F3;
+}
 
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body{
+    font-size: 16px;
+    font-family:"Tinos",serif;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+.imagen{
+    height:20rem;
+    background-image:  url('../img/pexels-guillermo-arroyo-1166930-2225727.jpg');
+    background-size:  cover;
+    background-position:  center center;
+}
+
+.app{
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-image: linear-gradient(to top, var(--grisClaro), var(--blanco));
+}
+
+.nombre-pagina{
+    text-align: center;
+    margin: 5rem 0;
+    font-weight: 700;
+}
+
+.descripcion-pagina{
+    text-align: center;
+}
+
+.formulario{
+    width:  100%;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    label{
+        flex: 0 0 10rem;
+    }
+    input{
+        flex: 1;
+        padding: 1.25rem;
+        border-radius: 1rem;
+
+    }
+
+}
+
+.campo-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: var(--azul);
+    padding: 1.5rem 4rem;
+    color: var(--blanco);
+    margin: 5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.acciones a{
+
+    display: block;
+    margin-top: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+@media (min-width: 768px) {
+
+    .contenedor-app{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        min-height: 100vh;
+    }
+    .imagen{
+        height:auto;
+    }
 }
